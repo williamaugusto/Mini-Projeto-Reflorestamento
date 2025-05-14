@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Plantio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Ações de Reflorestamento</h1>
+    </header>
+    <main>
+        <form id="plantioForm">
+            <label for="quantidade">Quantidade de árvores plantadas:</label>
+            <input type="number" id="quantidade" required min="1">
+            <label for="especie">Espécie:</label>
+            <select id="especie" required>
+                <option value="">Selecione uma espécie</option>
+                <option value="ipê">Ipê</option>
+                <option value="angico">Angico</option>
+                <option value="aroeira">Aroeira</option>
+                <option value="jequitibá">Jequitibá</option>
+                <option value="peroba-do-campo">Peroba do Campo</option>
+            </select>
+            <button type="submit">Cadastrar Plantio</button>
+        </form>
+        <div id="resultado"></div>
+    </main>
+    <script src="js/scriptCadastroPlantio.js"></script>
+</body>
+</html>

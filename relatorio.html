@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório de Reflorestamento</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <h2>Relatório de Reflorestamento</h2>
+
+  <label for="usuario">Usuário:</label>
+  <input type="text" id="usuario">
+
+  <label for="tipoArvore">Tipo de Árvore:</label>
+  <input type="text" id="tipoArvore">
+
+  <button onclick="buscar()">Buscar</button>
+
+  <table id="tabelaResultados">
+    <thead>
+      <tr>
+        <th>Usuário</th>
+        <th>Tipo de Árvore</th>
+        <th>Data</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Resultados inseridos via JS -->
+    </tbody>
+  </table>
+
+  <script src="js/scriptRegistrosReflorestamento.js"></script>
+</body>
+</html>

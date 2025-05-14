@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuário</h1>
+    </header>
+    <main>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            <p>Escolha seu avatar de árvore:</p>
+            <label><input type="radio" name="arvore" value="pau-brasil" required> Pau-Brasil</label>
+            <label><input type="radio" name="arvore" value="castanheira"> Castanheira</label>
+            <label><input type="radio" name="arvore" value="peroba-rosa"> Peroba-Rosa</label>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <script src="js/scriptCadastroUsuario.js"></script>
+</body>
+</html>
